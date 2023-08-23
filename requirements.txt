@@ -1,7 +1,9 @@
-numpy
-pandas
-selenium
-undetected_chromedriver
-streamlit
-pyperclip
-openpyxl
+free_proxy==1.1.1
+numpy==1.25.2
+pandas==1.5.2
+pyperclip==1.8.2
+Requests==2.31.0
+selenium==4.11.2
+streamlit==1.25.0
+undetected_chromedriver==3.5.0
+XlsxWriter==3.0.9
