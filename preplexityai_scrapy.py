@@ -58,6 +58,7 @@ def check_and_waiting(url,aa,question_read,driver1):
         if time.time() > timeout:  # Check if 20 seconds have passed
             driver1.quit()
             options = ChromeOptions()
+            options.binary_location = r"C:\Program Files\Google\Chrome\Application\chrome.exe"  # replace with the path you found
             options.add_argument("--disable-blink-features=AutomationControlled")
             options.add_argument("--headless")
             driver1 = Chrome(options=options)
@@ -89,6 +90,7 @@ if uploaded_file is not None:
             percentage_display.text(f"Progress: {progress * 100:.1f}%")
 
             options = ChromeOptions()
+            options.binary_location = r"C:\Program Files\Google\Chrome\Application\chrome.exe" 
             options.add_argument("--disable-blink-features=AutomationControlled")
             options.add_argument("--headless")
             driver1 = Chrome(options=options)
