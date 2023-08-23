@@ -61,7 +61,7 @@ def check_and_waiting(url,aa,question_read,driver1):
             options.binary_location = r"C:\Program Files\Google\Chrome\Application\chrome.exe"  # replace with the path you found
             options.add_argument("--disable-blink-features=AutomationControlled")
             options.add_argument("--headless")
-            driver1 = Chrome(options=options)
+            driver1 = Chrome(options=options,browser_executable_path='C:/Program Files/Google/Chrome/Application/chrome.exe')
             driver1.get(url)
             time.sleep(1)
             question_read(aa,driver1)
@@ -93,7 +93,7 @@ if uploaded_file is not None:
             options.binary_location = r"C:\Program Files\Google\Chrome\Application\chrome.exe" 
             options.add_argument("--disable-blink-features=AutomationControlled")
             options.add_argument("--headless")
-            driver1 = Chrome(options=options)
+            driver1 = Chrome(options=options,browser_executable_path='C:/Program Files/Google/Chrome/Application/chrome.exe')
             url="https://www.perplexity.ai/"
             driver1.get(url)
             print(i)
