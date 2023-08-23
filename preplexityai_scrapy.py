@@ -1,7 +1,6 @@
 import os
 import numpy as np
 import pandas as pd
-import xlsxwriter
 import time
 import requests
 import random
