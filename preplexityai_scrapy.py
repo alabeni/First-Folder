@@ -5,11 +5,7 @@ import time
 import requests
 import random
 from selenium import webdriver
-import numpy as np
-import pandas as pd
-import time
 import re
-from fp.fp import FreeProxy
 from undetected_chromedriver import Chrome, ChromeOptions
 from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.common.by import By
