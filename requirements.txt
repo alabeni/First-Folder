@@ -4,3 +4,4 @@ selenium
 undetected_chromedriver
 streamlit
 pyperclip
+openpyxl
